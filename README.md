@@ -14,20 +14,19 @@ MatchMyStay.bnb connects solo travelers with flexible hotel options and like-min
 
 Smart solo travel starts here.
 
-# Join the Movement
+  <section class="form-section">
+  <h2>Join the Movement</h2>
+  <p class="form-subtext">Be the first to experience travel in a more soulful, social, and budget-friendly way.</p>
 
   <form action="https://formspree.io/f/mkgjywdz" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required />
-    <input type="email" name="email" placeholder="Your Email" required />
-
-    <textarea name="message"placeholder="Why are you excited about MatchMyStay?" required></textarea>
-    <button type="submit"><Submit</button>
-  </form>
-  
-</section>
+  <input type="text" name="name" placeholder="Your Name" required />
+  <input type="email" name="email" placeholder="Your Email" required />
+  <text area name="message="placeholder= "Why are you excited about MatchMyStay?" required>/ 
+  <text area> <button type="submit"><Submit button>
+</form>
 <main>
 
-  <footer>
+  <footer> 
     <p>&copy; 2025 MatchMyStay.bnb. All rights reserved.</p>
   </footer>
 
