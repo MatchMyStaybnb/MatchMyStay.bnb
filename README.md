@@ -21,7 +21,7 @@ Smart solo travel starts here.
   <form action="https://formspree.io/f/mkgjywdz" method="POST">
   <input type="text" name="name" placeholder="Your Name" required />
   <input type="email" name="email" placeholder="Your Email" required />
-  <text area name="message="placeholder= "Why are you excited about MatchMyStay?" required>/ 
+  <text area name="message="placeholder= "Why are you excited about MatchMyStay?" required> 
   <text area> <button type="submit"><Submit button>
 </form>
 <main>
