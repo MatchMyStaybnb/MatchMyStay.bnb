@@ -4,7 +4,7 @@
 
 **MatchMyStay.bnb** is the first travel platform built exclusively with the solo traveler in mind.
 
-We match verified solo travelers with curated hotel stays that offer private rooms, room-sharing options, and a community-first experience — unlocking affordability, connection, and ease without sacrificing comfort or privacy.
+We match verified solo travelers with curated hotel stays that offer private rooms for solo or room-sharing options, and a community-first experience — unlocking affordability, connection, and ease without sacrificing comfort or privacy.
 
 ---
 
