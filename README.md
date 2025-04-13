@@ -51,7 +51,11 @@ To become the go-to platform for solo travelers around the world — making trav
 
 ## 🤝 Join the Movement
 
-MatchMyStay.bnb is more than a platform — it’s a solo travel revolution.  
+_MatchMyStay.bnb is more than a platform — it’s a solo travel revolution._
+
+Want to be part of our early tribe of solo travelers, testers, or supporters?
+
+👉 [Click here to join](https://formspree.io/f/mkgjywdz)
 
 🔗 **Connect with us** — let’s build the future of travel, together.
 
