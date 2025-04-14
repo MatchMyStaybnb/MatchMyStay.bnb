@@ -267,3 +267,72 @@ footer {
   line-height: 1.5;
   color: #444;
 }
+.header-content {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 12px;
+  animation: fadeIn 2s ease-in;
+}
+
+.animated-title {
+  font-size: 48px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff6f61, #ffcc70, #6ee7b7, #93c5fd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: slideInDown 1s ease-out;
+}
+
+.animated-tagline {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #ffffff;
+  animation: fadeInUp 1.5s ease-in;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #f29c1f;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #d87c00;
+}
+
+@keyframes slideInDown {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
