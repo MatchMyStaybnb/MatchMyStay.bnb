@@ -1,118 +1,83 @@
-/* Existing styles */
-
-/* New styles */
-
-/* Hero Section */
-.hero {
-  position: relative;
-  height: 80vh;
-  background-image: url('your-image.jpg'); /* Replace with your image or video */
-  background-size: cover;
-  background-position: center;
-  color: white;
-}
-
-.hero-background {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  z-index: 1;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
-
-.cta-btn {
-  background-color: #ffcc00;
-  color: white;
-  padding: 12px 24px;
-  font-size: 1.2rem;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.cta-btn:hover {
-  background-color: #e6b800;
-}
-
-/* Benefits Section */
-.benefits {
-  padding: 40px;
-  background-color: #f9f9f9;
-  text-align: center;
-}
-
-.benefits h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-.benefits ul {
-  list-style-type: none;
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
   padding: 0;
+  background: #f7f7f7;
+  color: #333;
 }
 
-.benefits li {
-  font-size: 1.1rem;
-  margin: 10px 0;
-  line-height: 1.5;
-}
-
-/* Testimonials Section */
-.testimonials {
-  background-color: #f1f1f1;
-  padding: 40px;
+header {
+  background: #FFD1DC; /* Heart Chakra Vibe */
   text-align: center;
+  padding: 2em 1em;
 }
 
-.testimonials h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+h1 {
+  font-size: 2.2em;
+  color: #5E4AE3; /* Crown chakra color */
 }
 
-.testimonial {
-  margin-bottom: 20px;
-  font-style: italic;
+h2 {
+  color: #3A86FF; /* Throat chakra vibe */
+  margin-top: 0;
 }
 
-/* Footer Section */
-footer {
-  background-color: #333;
-  color: white;
-  padding: 20px;
-  text-align: center;
+.intro,
+.features,
+.hotels,
+.cta,
+#form {
+  padding: 2em;
+  margin: 1em auto;
+  max-width: 800px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 
-footer a {
-  color: #ffcc00;
+ul {
+  padding-left: 1.2em;
+}
+
+li {
+  margin: 0.5em 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.6em 1.2em;
+  margin-top: 1em;
+  background: #7BDFF2; /* playful sacral chakra tone */
+  color: #000;
   text-decoration: none;
+  border-radius: 5px;
 }
 
-footer a:hover {
-  text-decoration: underline;
+form input, form textarea {
+  display: block;
+  width: 100%;
+  padding: 1em;
+  margin: 0.5em 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-/* Call-to-Action Button */
-.cta-btn {
-  background-color: #ffcc00;
-  color: white;
-  padding: 12px 24px;
-  font-size: 1.2rem;
+form button {
+  background: #5E4AE3;
+  color: #fff;
+  padding: 1em;
   border: none;
-  border-radius: 8px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-.cta-btn:hover {
-  background-color: #e6b800;
+form button:hover {
+  background: #3A0CA3;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5em;
+  background: #FFE066; /* solar chakra */
+  color: #333;
 }
