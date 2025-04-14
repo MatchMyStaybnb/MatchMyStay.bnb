@@ -10,7 +10,7 @@
       margin: 0;
       font-family: 'Montserrat', sans-serif;
       color: #333;
-      background-color: #f5f5f5;
+      background-color: #f8f8f8;
     }
 
     header {
@@ -44,6 +44,11 @@
       border-radius: 4px;
       text-decoration: none;
       font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .cta-buttons a:hover {
+      background-color: #e2673e;
     }
 
     .section {
@@ -56,6 +61,7 @@
       font-size: 2rem;
       text-align: center;
       margin-bottom: 30px;
+      color: #333;
     }
 
     .benefits ul {
@@ -65,12 +71,24 @@
       line-height: 1.8;
     }
 
+    .benefits li {
+      padding-left: 1.2rem;
+      position: relative;
+    }
+
+    .benefits li::before {
+      content: "🌟";
+      position: absolute;
+      left: 0;
+    }
+
     .testimonial {
       font-style: italic;
       background: white;
       padding: 30px;
       border-radius: 10px;
       margin-bottom: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
 
     .testimonial p {
@@ -99,6 +117,19 @@
       margin: 10px 0;
       padding: 10px;
       font-size: 1rem;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    form button {
+      background-color: #FF7F50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #e2673e;
     }
 
     footer {
@@ -130,10 +161,10 @@
 <section class="section benefits" id="benefits">
   <h2>Why Solo Travelers Love MatchMyStay.bnb</h2>
   <ul>
-    <li>✨ Stay solo or share with a like-minded guest — your trip, your terms</li>
-    <li>🔐 Verified profiles ensure safety, trust & good vibes</li>
-    <li>💬 Connect meaningfully before or during your trip</li>
-    <li>🌍 Save up to 30% by room-sharing — no bunk beds, no dorms, just comfort</li>
+    <li>Stay solo or share with a like-minded guest — your trip, your terms</li>
+    <li>Verified profiles ensure safety, trust & good vibes</li>
+    <li>Connect meaningfully before or during your trip</li>
+    <li>Save up to 30% by room-sharing — no bunk beds, no dorms, just comfort</li>
   </ul>
 </section>
 
