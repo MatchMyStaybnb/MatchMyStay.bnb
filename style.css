@@ -336,3 +336,46 @@ footer {
     opacity: 1;
   }
 }
+section {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  margin: 30px auto;
+  max-width: 800px;
+  border-radius: 8px;
+}
+
+section h2 {
+  font-size: 24px;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+section p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+section form input,
+section form textarea,
+section form select {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+section form button {
+  background-color: #f29c1f;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+section form button:hover {
+  background-color: #dd891c;
+}
