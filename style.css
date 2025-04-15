@@ -379,3 +379,82 @@ section form button {
 section form button:hover {
   background-color: #dd891c;
 }
+header {
+  background: url('https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  position: relative;
+}
+
+.header-content {
+  animation: fadeInUp 2s ease-out forwards;
+  opacity: 0;
+}
+
+.animated-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  background: linear-gradient(to right, #ff6a00, #ee0979);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: slideDown 2s ease forwards;
+}
+
+.animated-tagline {
+  font-size: 1.5rem;
+  font-weight: 400;
+  animation: fadeIn 3s ease-in forwards;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  background-color: #ffffffcc;
+  color: #333;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.cta-button:hover {
+  background-color: #fff;
+  transform: scale(1.05);
+}
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
