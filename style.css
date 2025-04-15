@@ -195,14 +195,13 @@ footer {
 }
 .why-it-works {
   background-color: #fffaf0;
-  padding: 50px 20px;
-  text-align: left;
+  padding: 60px 20px;
+  text-align: center;
 }
 
 .why-it-works h2 {
-  font-size: 26px;
-  margin-bottom: 20px;
-  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
   color: #333;
 }
 
@@ -211,18 +210,19 @@ footer {
   margin: 0 auto;
   padding: 0;
   list-style-type: none;
-}
-.why-it-works {
-  background: linear-gradient(to right, #f0f8ff, #e0f7fa);
-  padding: 60px 20px;
-  text-align: center;
+  text-align: left;
 }
 
-.why-it-works h2 {
-  font-size: 32px;
-  margin-bottom: 40px;
-  color: #222;
-  font-weight: 600;
+.why-it-works li {
+  background-color: #ffffff;
+  border-left: 5px solid #f29c1f;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #444;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  border-radius: 6px;
 }
 
 .reasons-grid {
