@@ -1,229 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MatchMyStay.bnb</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      color: #333;
-      background-color: #f8f8f8;
-    }
-
-    header {
-      background: url('https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
-      height: 90vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: white;
-      padding: 20px;
-    }
-
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      max-width: 700px;
-      margin: 0 auto 1rem;
-    }
-
-    .cta-buttons a {
-      background-color: #FF7F50;
-      color: white;
-      padding: 12px 20px;
-      margin: 0 10px;
-      border: none;
-      border-radius: 4px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s ease;
-    }
-
-    .cta-buttons a:hover {
-      background-color: #e2673e;
-    }
-
-    .section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-
-    .section h2 {
-      font-size: 2rem;
-      text-align: center;
-      margin-bottom: 30px;
-      color: #333;
-    }
-
-    .benefits ul {
-      list-style-type: none;
-      padding: 0;
-      font-size: 1.1rem;
-      line-height: 1.8;
-    }
-
-    .benefits li {
-      padding-left: 1.2rem;
-      position: relative;
-    }
-
-    .benefits li::before {
-      content: "🌟";
-      position: absolute;
-      left: 0;
-    }
-
-    .testimonial {
-      font-style: italic;
-      background: white;
-      padding: 30px;
-      border-radius: 10px;
-      margin-bottom: 20px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
-    .testimonial p {
-      margin-bottom: 0.5rem;
-    }
-
-    .testimonial span {
-      font-weight: bold;
-    }
-
-    .form-section {
-      background-color: #e3e3e3;
-      padding: 40px 20px;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      max-width: 500px;
-      margin: auto;
-    }
-
-    form input,
-    form textarea,
-    form button {
-      margin: 10px 0;
-      padding: 10px;
-      font-size: 1rem;
-      border-radius: 4px;
-      border: 1px solid #ccc;
-    }
-
-    form button {
-      background-color: #FF7F50;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-
-    form button:hover {
-      background-color: #e2673e;
-    }
-
-    footer {
-      background-color: #222;
-      color: #ccc;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
-    }
-
-    .hidden-email {
-      display: none;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MatchMyStay.bnb | Smart Stays for Solo Travelers</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <div class="header-content">
-    <h1 class="animated-title">MatchMyStay.bnb</h1>
-    <p class="animated-tagline">Where Solo Travel Feels Effortless, Connected, and Affordable.</p>
-    <a href="#form-section" class="cta-button">Join the Movement</a>
-  </div>
-</header>
-</section>
+  <!-- Navigation Bar -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#partner-with-us">Partner With Us</a></li>
+        <li><a href="#investor-info">Investor Info</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<section class="section benefits" id="benefits">
-  <h2>Why Solo Travelers Love MatchMyStay.bnb</h2>
-  <ul>
-    <li>Stay solo or share with a like-minded guest — your trip, your terms</li>
-    <li>Verified profiles ensure safety, trust & good vibes</li>
-    <li>Connect meaningfully before or during your trip</li>
-    <li>Save up to 30% by room-sharing — no bunk beds, no dorms, just comfort</li>
-  </ul>
-</section>
-
-<section class="testimonial">
-  <h2>Why I Built MatchMyStay.bnb</h2>
-  <blockquote>
-    <p>
-      “After traveling solo to many countries and countless cities, I realized how tough and expensive it can be for solo travelers. Sometimes, I paid double just to stay alone — other times, I missed out on meeting incredible people. I created MatchMyStay.bnb to change that. To help people like me feel at home, stay affordably, and still enjoy privacy and connection.”
-    </p>
-    <footer>— Lynn, Founder of MatchMyStay.bnb</footer>
-  </blockquote>
-</section>
-
-  <section class="why-it-works">
-  <h2>Why It Works</h2>
-  <div class="reasons-grid">
-    <div class="reason-box">
-      <h3> 🌟 Stay Solo, Stay Smart</h3>
-      <p>Get your own private room without paying the full price. Whether you share or not, you're in control.</p>
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Smart Stays for Solo Travelers</h1>
+      <p>Private rooms. Verified guests. No compromises.</p>
+      <div class="cta-buttons">
+        <a href="#how-it-works" class="cta">Explore How It Works</a>
+        <a href="#partner-with-us" class="cta">Partner With Us</a>
+        <a href="#waitlist" class="cta">Join the Waitlist</a>
+      </div>
     </div>
-    <div class="reason-box">
-      <h3> 🤝 Connect When You Want</h3>
-      <p>Room-share with a verified guest or keep it solo — choose based on your vibe, not your budget.</p>
-    </div>
-    <div class="reason-box">
-      <h3> 🏨 Hotels Win Too</h3>
-      <p>Hotels fill more rooms, travelers save money — it's a win-win hospitality model built for the future.</p>
-    </div>
-    <div class="reason-box">
-      <h3> 💡 A Mindful Match</h3>
-      <p>Astro-vibes, traveler types, and real profiles. We match based on more than just price — we match with intention.</p>
-    </div>
-  </div>
   </section>
-  
-<section class="form-section" id="form">
-  <h2>Be the First to Know</h2>
-  <form action="https://formspree.io/f/mkgjywdz" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required />
-    <input type="email" name="email" placeholder="Your Email" required />
-    <textarea name="message" placeholder="Why are you excited about MatchMyStay?" required></textarea>
-    <button type="submit">Submit</button>
-    <p class="hidden-email">lynntebban@yahoo.com</p>
-  </form>
-</section>
-  
-<footer>
-  <section class="hotel-partners">
-  <h2>🏨 Hotels, Let’s Partner Up</h2>
-  <p>Reach a growing market of solo travelers. Register your interest below:</p>
-  <form action="https://formspree.io/f/mkgjywdz" method="POST">
-    <input type="text" name="hotel-name" placeholder="Hotel Name" required />
-    <input type="text" name="contact-person" placeholder="Your Name" required />
-    <input type="email" name="email" placeholder="Contact Email" required />
-    <textarea name="message" placeholder="Tell us why you're interested!"></textarea>
-    <button type="submit">Register Interest</button>
-  </form>
-  </section>  
-</footer>
-  <p>&copy; 2025 MatchMyStay.bnb. All rights reserved.</p>
-</footer>
+
+  <!-- Why It Works Section -->
+  <section id="why-it-works">
+    <h2>Why It Works</h2>
+    <ul>
+      <li>Stay solo or share with like-minded travelers — your choice, your terms.</li>
+      <li>Private rooms. Verified guests. No dorms. Just comfort and privacy.</li>
+      <li>Save up to 30% by sharing a room with a verified traveler.</li>
+      <li>Hotels can easily access the growing solo traveler market.</li>
+    </ul>
+  </section>
+
+  <!-- Hotel Partner Callout -->
+  <section id="partner-with-us">
+    <h2>Partner With MatchMyStay.bnb</h2>
+    <p>Fill more rooms. Delight more guests. It's easy to get started.</p>
+    <a href="#hotel-partner-form" class="cta">Become a Partner</a>
+  </section>
+
+  <!-- Investor Teaser Section -->
+  <section id="investor-info">
+    <h2>A New Era of Hospitality</h2>
+    <p>MatchMyStay.bnb is tapping into the growing solo traveler market with an innovative, win-win booking model.</p>
+    <p><strong>Global solo travel is up 42% since 2022</strong></p>
+    <p><strong>Hotels lose millions in unused private rooms</strong></p>
+    <p><strong>We're launching in the travel capital: Dubai</strong></p>
+    <a href="#investor-pitch" class="cta">Request Pitch Deck</a>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials">
+    <h2>What Solo Travelers Are Saying</h2>
+    <blockquote>
+      <p>"After traveling solo to many countries, I realized hostels weren’t always the vibe. I just wanted a private, affordable, peaceful place to land — and that’s how MatchMyStay.bnb was born.”</p>
+      <footer>- Founder of MatchMyStay.bnb</footer>
+    </blockquote>
+  </section>
+
+  <!-- Waitlist Section -->
+  <section id="waitlist">
+    <h2>Get Early Access</h2>
+    <form action="https://formspree.io/f/mkgjywdz" method="POST">
+      <input type="email" name="email" placeholder="Your Email" required />
+      <button type="submit">Join the Waitlist</button>
+    </form>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 MatchMyStay.bnb. All rights reserved.</p>
+    <p>Contact: <a href="mailto:lynntebban@yahoo.com" id="email-link">lynntebban@yahoo.com</a></p>
+  </footer>
 
 </body>
 </html>
