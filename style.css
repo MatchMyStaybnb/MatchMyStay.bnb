@@ -208,6 +208,7 @@ footer {
 .hidden-email {
   display: none;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
 .why-it-works {
@@ -238,6 +239,7 @@ footer {
   padding: 24px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   transition: transform 0.2s ease;
+  text-align: center; /* center the text inside each box */
 }
 
 .why-box:hover {
