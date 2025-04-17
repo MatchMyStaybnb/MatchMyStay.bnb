@@ -1,84 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>MatchMyStayBnB</title>
+    <title>MatchMyStay.BnB</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
-  
+
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#how-it-works">How It Works</a></li>
-        <li><a href="#partner-with-us">Partner With Us</a></li>
-        <li><a href="#investor-info">Investor Info</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#partners">Partner With Us</a></li>
+                <li><a href="#investors">Investor Info</a></li>
+                <li><a href="#waitlist">Join the Waitlist</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1 class="animate__animated animate__fadeInUp">Smart Stays for Solo Travelers</h1>
+            <p>Private rooms. Verified guests. No compromises.</p>
+            <div class="cta-buttons">
+                <a href="#how-it-works">Explore How It Works</a>
+                <a href="#partners">Partner with Us</a>
+                <a href="#waitlist">Join the Waitlist</a>
+            </div>
+        </div>
+    </header>
 
-  <section id="hero">
-    <div class="hero-content">
-      <h1>Smart Stays for Solo Travelers</h1>
-      <p>Private rooms. Verified guests. No compromises.</p>
-      <div class="cta-buttons">
-        <a href="#how-it-works" class="cta">Explore How It Works</a>
-        <a href="#partner-with-us" class="cta">Partner With Us</a>
-        <a href="#waitlist" class="cta">Join the Waitlist</a>
-      </div>
+    <section id="how-it-works">
+        <h2>Why It Works</h2>
+        <div class="why-grid">
+            <div class="why-box">
+                <h3>Connect When You Want</h3>
+                <p>Room-share with a verified guest or keep it solo — choose based on your vibe, not your budget.</p>
+            </div>
+            <div class="why-box">
+                <h3>Hotels Win Too</h3>
+                <p>Hotels fill more rooms, travelers save money — it's a win-win hospitality model built for the future.</p>
+            </div>
+            <div class="why-box">
+                <h3>A Mindful Match</h3>
+                <p>Astro-vibes, traveler types, and real profiles. We match based on more than just price — we match with intention.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="partners">
+        <h2>Partner With MatchMyStayBnB</h2>
+        <p>Fill more rooms. Delight more guests. We’re helping hotels reach solo travelers in a whole new way.</p>
+        <div class="partner-benefits">
+            <ul>
+                <li>Higher occupancy with no extra effort</li>
+                <li>Access to a new traveler segment</li>
+                <li>No upfront cost — just sign up and get listed</li>
+            </ul>
+            <a href="#partner-form" class="cta-button">Partner With Us</a>
+        </div>
+    </section>
+
+    <section id="investors">
+        <h2>A New Era of Hospitality</h2>
+        <p>MatchMyStayBnB is tapping into a growing solo traveler market with an innovative, win-win booking model.</p>
+        <div class="investor-stats">
+            <p> Global solo travel is up 42% since 2022</p>
+            <p> Hotels lose millions in unused private rooms</p>
+            <p> We’re launching in the travel capital: Dubai</p>
+        </div>
+        <div class="cta-buttons">
+            <a href="#request-pitch">Request Pitch Deck</a>
+            <a href="#contact-us">Talk to Us</a>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2>What Our Travelers Say</h2>
+        <blockquote>
+            “After traveling solo to many countries, I realized hostels weren’t always the vibe. I just wanted a private, affordable, peaceful place to land — and that’s how MatchMyStayBnB was born.”
+            <footer>- Founder</footer>
+        </blockquote>
+    </section>
+
+    <section id="waitlist">
+        <h2>Stay in the Loop</h2>
+        <p>Get early access, discounts, and launch updates.</p>
+        <form action="#">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 MatchMyStay.BnB. All rights reserved.</p>
+    </footer>
+
+    <div class="partner-form" id="partner-form">
+        <h3>Hotel Partner Interest Form</h3>
+        <form action="#">
+            <input type="text" placeholder="Hotel Name" required>
+            <input type="email" placeholder="Hotel Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
     </div>
-  </section>
-
-  <section id="why-it-works">
-    <h2>Why It Works</h2>
-    <ul>
-      <li>Stay solo or share with like-minded travelers — your choice, your terms.</li>
-      <li>Private rooms. Verified guests. No dorms. Just comfort and privacy.</li>
-      <li>Save up to 30% by sharing a room with a verified traveler.</li>
-      <li>Hotels can easily access the growing solo traveler market.</li>
-    </ul>
-  </section>
-
-  <section id="partner-with-us">
-    <h2>Partner With MatchMyStay.bnb</h2>
-    <p>Fill more rooms. Delight more guests. It's easy to get started.</p>
-    <a href="#hotel-partner-form" class="cta">Become a Partner</a>
-    
-  </section>
-
-  <section id="investor-info">
-    <h2>A New Era of Hospitality</h2>
-    <p>MatchMyStay.bnb is tapping into the growing solo traveler market with an innovative, win-win booking model.</p>
-    <p><strong>Global solo travel is up 42% since 2022</strong></p>
-    <p><strong>Hotels lose millions in unused private rooms</strong></p>
-    <p><strong>We're launching in the travel capital: Dubai</strong></p>
-    <a href="#investor-pitch" class="cta">Request Pitch Deck</a>
-  </section>
-
-  <section id="testimonials">
-    <h2>What Solo Travelers Are Saying</h2>
-    <blockquote>
-      <p>"After traveling solo to many countries, I realized hostels weren’t always the vibe. I just wanted a private, affordable, peaceful place to land — and that’s how MatchMyStay.bnb was born.”</p>
-      <footer>- Founder of MatchMyStay.bnb</footer>
-    </blockquote>
-  </section>
-
-  <section id="waitlist">
-    <h2>Get Early Access</h2>
-    <form action="https://formspree.io/f/mkgjywdz" method="POST">
-      <input type="email" name="email" placeholder="Your Email" required />
-      <button type="submit">Join the Waitlist</button>
-    </form>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 MatchMyStay.bnb. All rights reserved.</p>
-    <p>Contact: <a href="mailto:lynntebban@yahoo.com" id="email-link">lynntebban@yahoo.com</a></p>
-  </footer>
 
 </body>
+
 </html>
