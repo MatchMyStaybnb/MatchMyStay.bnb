@@ -20,16 +20,21 @@
 
 <body>
   <nav class="navbar">
-    <div class="nav-container">
-      <div class="logo">MatchMyStay.bnb</div>
-      <ul class="nav-links">
-        <li><a href="#how-it-works">How it Works</a></li>
-        <li><a href="#partner">Partner</a></li>
-        <li><a href="#investor">Investor</a></li>
-        <li><a href="#form">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
+  <div class="nav-container">
+    <div class="logo">MatchMyStay.bnb</div>
+    
+    <!-- Hamburger Icon -->
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <!-- Navigation Links -->
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#how-it-works">How it Works</a></li>
+      <li><a href="#partner">Partner</a></li>
+      <li><a href="#investor">Investor</a></li>
+      <li><a href="#form">Contact</a></li>
+    </ul>
+  </div>
+</nav>
 
   <header class="hero">
     <h1 class="animated-text">Smart Stays for Solo Travelers</h1>
@@ -101,5 +106,13 @@
   <footer>
     <p>© 2025 MatchMyStay.bnb. All rights reserved.</p>
   </footer>
+
+<script>
+  function toggleMenu() {
+    const navLinks = document.getElementById("navLinks");
+    navLinks.classList.toggle("active");
+  }
+</script>
+  
 </body>
 </html>
