@@ -142,16 +142,17 @@
       }
     });
   });
-</script>
-const navLinks = document.querySelectorAll('.nav-links a');
-navLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    gtag('event', 'click', {
-      event_category: 'Navigation',
-      event_label: link.textContent.trim()
+</body>
+<script>
+  const navLinks = document.querySelectorAll('.nav-links a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      gtag('event', 'click', {
+        event_category: 'Navigation',
+        event_label: link.textContent.trim()
+      });
     });
   });
-});
+</script>
 
-</body>
 </html>
