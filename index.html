@@ -114,5 +114,35 @@
   }
 </script>
   
+<script>
+  function toggleMenu() {
+    const navLinks = document.getElementById("navLinks");
+    navLinks.classList.toggle("active");
+  }
+
+  // Track button clicks across the site
+  document.addEventListener("DOMContentLoaded", function () {
+    const trackedButtons = [
+      { selector: 'a[href="#how-it-works"]', label: "How It Works" },
+      { selector: 'a[href="#waitlist"]', label: "Join Waitlist" },
+      { selector: 'a[href="#form"]', label: "Form Access" },
+      { selector: '#waitlist button[type="submit"]', label: "Waitlist Submit" },
+      { selector: '.form-section button[type="submit"]', label: "Contact Form Submit" }
+    ];
+
+    trackedButtons.forEach(item => {
+      const el = document.querySelector(item.selector);
+      if (el) {
+        el.addEventListener("click", () => {
+          gtag('event', 'click', {
+            event_category: 'Button',
+            event_label: item.label
+          });
+        });
+      }
+    });
+  });
+</script>
+
 </body>
 </html>
