@@ -93,16 +93,25 @@
       <textarea name="message" placeholder="Your Message" required></textarea>
       <button type="submit">Send</button>
     </form>
+<script>
+  function trackFormSubmit() {
+    gtag('event', 'form_submission', {
+      event_category: 'Contact',
+      event_label: 'Formspree Contact'
+    });
+  }
+</script>
+
   </section>
 
   <section id="waitlist" class="centered-section">
-    <h2>Stay in the Loop</h2>
-    <p>Get early access, discounts, and launch updates.</p>
-    <form>
-      <input type="email" placeholder="Your email address" required />
-      <button type="submit">Join Waitlist</button>
-    </form>
-  </section>
+  <h2>Stay in the Loop</h2>
+  <p>Get early access, discounts, and launch updates.</p>
+  <form onsubmit="trackWaitlistJoin()">
+    <input type="email" placeholder="Your email address" required />
+    <button type="submit">Join Waitlist</button>
+  </form>
+</section>
 
   <footer>
     <p>© 2025 MatchMyStay.bnb. All rights reserved.</p>
@@ -203,5 +212,14 @@
   });
 </script>
 
+<script>
+  function trackWaitlistJoin() {
+    gtag('event', 'join_waitlist', {
+      event_category: 'Conversion',
+      event_label: 'Waitlist Form'
+    });
+  }
+</script>
+  
 </body>
 </html>
