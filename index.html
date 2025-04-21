@@ -167,5 +167,41 @@
   });
 </script>
 
+<script>
+  const contactForm = document.querySelector('form[action*="formspree"]');
+  if (contactForm) {
+    contactForm.addEventListener('submit', () => {
+      gtag('event', 'submit', {
+        event_category: 'Form',
+        event_label: 'Contact Form'
+      });
+    });
+  }
+</script>
+  
+<script>
+  const waitlistForm = document.querySelector('#waitlist form');
+  if (waitlistForm) {
+    waitlistForm.addEventListener('submit', () => {
+      gtag('event', 'submit', {
+        event_category: 'Form',
+        event_label: 'Waitlist Form'
+      });
+    });
+  }
+</script>
+  
+<script>
+  const ctaButtons = document.querySelectorAll('.cta-buttons a');
+  ctaButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      gtag('event', 'click', {
+        event_category: 'CTA',
+        event_label: button.textContent.trim()
+      });
+    });
+  });
+</script>
+
 </body>
 </html>
