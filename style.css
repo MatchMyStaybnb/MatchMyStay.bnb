@@ -317,3 +317,36 @@ footer {
     margin: 0.5rem 0;
   }
 }
+.logo-animation {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-top: 2rem;
+}
+
+.walking-woman {
+  position: absolute;
+  height: 50px;
+  top: 0;
+  left: -60px;
+  animation: walkAcross 8s linear infinite;
+  z-index: 2;
+}
+
+.animated-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-left: 60px;
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes walkAcross {
+  0% {
+    left: -60px;
+  }
+  100% {
+    left: 100%;
+  }
+}
