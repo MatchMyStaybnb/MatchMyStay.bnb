@@ -15,8 +15,39 @@
   </script>
 
   <!-- Styles & Fonts -->
+<style>
+  /* Inline critical CSS for .hero */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+    min-height: 60vh;
+    background: url('your-background.jpg') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+</style>
+
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <!-- Preload Fonts for Faster LCP -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
     <!-- Microsoft Clarity Tracking Code -->
   <script type="text/javascript">
