@@ -294,28 +294,27 @@
     send_page_view: true
   });
 </script>
-<!-- Add this code where you want the pop-up to appear (usually before </body>) -->
-<!-- Pop-up Survey -->
-<div id="surveyPopup" class="survey-popup" style="display:none;">
-    <div class="survey-popup-content">
-        <h2>We value your feedback!</h2>
-        <p>Tell us what you think about MatchMyStay.bnb, and help us improve.</p>
-        <iframe src="https://forms.gle/pZmpH7611mDM3Mnz9" width="100%" height="400px" frameborder="0"></iframe>
-        <button id="closePopup" onclick="closeSurveyPopup()">Close</button>
-    </div>
+<!-- Survey Popup -->
+<div id="popup-survey" class="survey-popup">
+  <div class="survey-popup-content">
+    <p>Hey solo traveler! Mind sharing quick feedback?</p>
+    <button onclick="location.href='https://forms.gle/pZmpH7611mDM3Mnz9'">Sure!</button>
+    <button onclick="closePopup()">Maybe later</button>
+  </div>
 </div>
 
-<!-- Trigger Button -->
-<button id="openSurveyPopup">Give Feedback</button>
-
-<!-- Survey Popup Script -->
 <script>
-    document.getElementById('openSurveyPopup').onclick = function() {
-        document.getElementById('surveyPopup').style.display = 'block';
-    };
-    function closeSurveyPopup() {
-        document.getElementById('surveyPopup').style.display = 'none';
-    }
+  // Show popup after a delay (e.g. 5 seconds)
+  window.onload = function () {
+    setTimeout(() => {
+      document.getElementById('popup-survey').style.display = 'flex';
+    }, 5000);
+  };
+
+  // Close popup function
+  function closePopup() {
+    document.getElementById('popup-survey').style.display = 'none';
+  }
 </script>
   
 </body>
