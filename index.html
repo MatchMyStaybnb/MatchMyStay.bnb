@@ -293,28 +293,64 @@
     page_path: window.location.pathname,
     send_page_view: true
   });
+</script>
 
 <!-- Survey Popup -->
-<div id="popup-survey" class="survey-popup">
+<div id="popup-survey" class="survey-popup" style="display: none;">
   <div class="survey-popup-content">
     <p>Hey solo traveler! Mind sharing quick feedback?</p>
-    <button onclick="location.href='https://forms.gle/pZmpH7611mDM3Mnz9'">Sure!</button>
+    <button onclick="window.open('https://forms.gle/pZmpH7611mDM3Mnz9','_blank')">Sure!</button>
     <button onclick="closePopup()">Maybe later</button>
   </div>
 </div>
 
-<script>
-  // Show popup after a delay (e.g. 5 seconds)
-  window.onload = function () {
-    setTimeout(() => {
-      document.getElementById('popup-survey').style.display = 'flex';
-    }, 5000);
-  };
-
-  // Close popup function
-  function closePopup() {
-    document.getElementById('popup-survey').style.display = 'none';
+<style>
+  .survey-popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #fff;
+    border: 2px solid #ccc;
+    padding: 16px;
+    z-index: 9999;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
   }
+
+  .survey-popup-content p {
+    margin-bottom: 10px;
+  }
+
+  .survey-popup-content button {
+    margin-right: 10px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .survey-popup-content button:first-child {
+    background-color: #3f87f5;
+    color: white;
+  }
+
+  .survey-popup-content button:last-child {
+    background-color: #e0e0e0;
+    color: #333;
+  }
+</style>
+
+<script>
+  function closePopup() {
+    document.getElementById("popup-survey").style.display = "none";
+  }
+
+  window.addEventListener("load", function () {
+    setTimeout(function () {
+      document.getElementById("popup-survey").style.display = "block";
+    }, 5000); // 5 seconds delay
+  });
 </script>
   
 </body>
