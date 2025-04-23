@@ -294,6 +294,28 @@
     send_page_view: true
   });
 </script>
+<!-- Survey Popup -->
+<div id="popup-survey" style="display: none;">
+  <div class="modal">
+    <p>Hey solo traveler! Mind sharing quick feedback?</p>
+    <button onclick="location.href='https://forms.gle/your-survey-link'">Sure!</button>
+    <button onclick="closePopup()">Maybe later</button>
+  </div>
+</div>
+
+<script>
+  // Show popup after a delay (e.g. 5 seconds)
+  window.onload = function () {
+    setTimeout(() => {
+      document.getElementById('popup-survey').style.display = 'flex';
+    }, 5000);
+  };
+
+  // Close popup function
+  function closePopup() {
+    document.getElementById('popup-survey').style.display = 'none';
+  }
+</script>
 
 </body>
 </html>
