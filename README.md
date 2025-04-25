@@ -1,5 +1,5 @@
 # 🌟 MatchMyStay.bnb 
- _Where Journeys Connect_
+ _Match your stay. Match your vibe._
 ### A New Era of Solo Travel Starts Here.  
 *“Because traveling alone should never mean feeling alone — or paying double.”*
 
