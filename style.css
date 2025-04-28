@@ -359,15 +359,6 @@ footer {
 #openSurveyPopup:hover {
   background-color: #45a049;
 }
-.hero .tagline {
-  font-size: 1.2rem;        /* tweak as needed */
-  font-weight: 600;          /* make it pop */
-  color: #f29c1f;            /* your brand accent color */
-  margin: 0.5rem 0 1rem;     /* space above/below */
-  text-transform: uppercase; /* optional for extra punch */
-  letter-spacing: 0.05em;    /* subtle tracking */
-  animation: fadeInUp 1s ease-out; /* if you want it to animate in */
-}
 .tagline {
   font-family: 'Great Vibes', cursive;
   color: white;
@@ -375,5 +366,5 @@ footer {
   font-weight: normal;
   text-align: center;
   margin-top: 10px;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
