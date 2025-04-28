@@ -1,388 +1,115 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <link rel="preload" as="image" href="background-compressed.jpg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MatchMyStay.bnb | Smart Stays for Solo Travelers</title>
 
-<!-- Essential SEO Meta Tags -->
-<title>MatchMyStay.bnb | Smart Stays for Solo Travelers</title>
-<meta name="description" content="Book verified private rooms as a solo traveler. Smart stays, no compromises. Join the MatchMyStay.bnb community today.">
-<link rel="canonical" href="https://matchmystaybnb.github.io/MatchMyStay.bnb/" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta http-equiv="Content-Language" content="en">
-
-<!-- Open Graph Meta Tags for Social Sharing -->
-<meta property="og:title" content="MatchMyStay.bnb" />
-<meta property="og:description" content="Smart Stays for Solo Travelers. Private rooms. Verified guests. No compromises." />
-<meta property="og:image" content="https://matchmystaybnb.github.io/MatchMyStay.bnb/assets/social-preview.jpg" />
-<meta property="og:url" content="https://matchmystaybnb.github.io/MatchMyStay.bnb/" />
-<meta property="og:type" content="website" />
-
-<!-- Favicon -->
-<link rel="icon" type="image/png" href="favicon.png">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MatchMyStay.bnb</title>
-  
-  <!-- Styles & Fonts -->
-<style>
-  /* Inline critical CSS for .hero */
-  .hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 80px 20px;
-    min-height: 60vh;
-    background: url('your-background.jpg') no-repeat center center;
-    background-size: cover;
-    text-align: center;
-    color: white;
-  }
-
-  .hero h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-  }
-
-  .hero p {
-    font-size: 1.2rem;
-    max-width: 700px;
-    margin: 0 auto;
-  }
-</style>
-
-  <link rel="stylesheet" href="style.css" />
-    <!-- Preload Fonts for Faster LCP -->
+  <!-- Preconnect for faster font loading -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Preconnect to improve performance -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<!-- Preload the font stylesheet -->
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" media="all" onload="this.media='all'">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
 
-<!-- Fallback for no-JS users -->
-<noscript>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-</noscript>
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
 
-    <!-- Microsoft Clarity Tracking Code -->
-  <script type="text/javascript">
-      (function(c,l,a,r,i,t,y){
-          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-      })(window, document, "clarity", "script", "r7sr7y74f4");
-  </script>
+  <!-- Preload background image -->
+  <link rel="preload" as="image" href="background-compressed.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
 </head>
 
 <body>
-  <nav class="navbar">
-  <div class="nav-container">
-    <div class="logo">MatchMyStay.bnb</div>
-    
-    <!-- Hamburger Icon -->
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
 
-    <!-- Navigation Links -->
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#how-it-works">How it Works</a></li>
-      <li><a href="#partner">Partner</a></li>
-      <li><a href="#investor">Investor</a></li>
-      <li><a href="#form">Contact</a></li>
-    </ul>
-  </div>
-</nav>
-
-  <header class="hero">
-    <h1 class="animated-text">Smart Stays for Solo Travelers</h1>
-    <h2 class="tagline">Match your stay. Match your vibe.</h2>
-
-    <p class="subheading">Private rooms. Verified guests. No compromises.</p>
-    <div class="cta-buttons">
-      <a href="#how-it-works" class="btn">How It Works</a>
-      <a href="#waitlist" class="btn secondary">Join Waitlist</a>
-    </div>
+  <header>
+    <nav class="nav-container">
+      <div class="logo">MatchMyStay.bnb</div>
+      <div class="nav-links">
+        <a href="#how-it-works">How It Works</a>
+        <a href="#partners">Partners</a>
+        <a href="#investors">Investors</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#join">Join Waitlist</a>
+      </div>
+    </nav>
   </header>
 
-  <section id="how-it-works" class="centered-section">
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Smart Stays for Solo Travelers</h1>
+      <p>Save, Connect, and Stay Better.</p>
+    </div>
+  </section>
+
+  <section id="how-it-works" class="how-it-works">
     <h2>Why It Works</h2>
-    <p class="tagline">Stay Solo, Stay Smart.</p>
-    <p>Get your own private room without paying the full price. Whether you share or not, you're in control.</p>
-    <p><strong>Connect When You Want:</strong> Room-share with a verified guest or keep it solo — choose based on your vibe, not your budget.</p>
-    <p><strong>Hotels Win Too:</strong> Hotels fill more rooms, travelers save money — it's a win-win hospitality model built for the future.</p>
-    <p><strong>A Mindful Match:</strong> Astro-vibes, traveler types, and real profiles. We match based on more than just price — we match with intention.</p>
+    <div class="benefits-container">
+      <div class="benefit-box">
+        <h3>Private Rooms</h3>
+        <p>Enjoy the privacy of your own room with the cost benefits of a shared experience.</p>
+      </div>
+      <div class="benefit-box">
+        <h3>Smart Matching</h3>
+        <p>We match travelers based on preferences for smoother shared stays.</p>
+      </div>
+      <div class="benefit-box">
+        <h3>Hotel Amenities</h3>
+        <p>All the hotel comforts you love, at a solo traveler price point.</p>
+      </div>
+    </div>
   </section>
 
-  <section id="partner" class="light-section">
-    <h2>Partner With MatchMyStay.bnb</h2>
-    <p>Fill more rooms. Delight more guests. We're helping hotels reach solo travelers in a whole new way.</p>
-    <ul>
-      <li>Higher occupancy with no extra effort</li>
-      <li>Access to a new traveler segment</li>
-      <li>No upfront cost — just sign up and get listed</li>
-    </ul>
+  <section id="partners" class="partners">
+    <h2>Hotels & Partners</h2>
+    <p>Interested in partnering with us? Join early and reach solo travelers worldwide.</p>
+    <form action="https://formspree.io/f/{your-form-id}" method="POST">
+      <input type="text" name="hotel" placeholder="Hotel/Partner Name" required />
+      <input type="email" name="email" placeholder="Contact Email" required />
+      <button type="submit">Register Interest</button>
+    </form>
   </section>
 
-  <section id="investor" class="highlight-section">
-    <h2>A New Era of Hospitality</h2>
-    <p>MatchMyStay.bnb is tapping into a growing solo traveler market with an innovative, win-win booking model.</p>
-    <ul>
-      <li>Global solo travel is up 42% since 2022</li>
-      <li>Hotels lose millions in unused private rooms</li>
-      <li>We’re launching in the travel capital: Dubai</li>
-    </ul>
-    <p>Interested in supporting our mission?</p>
-  </section>
-
-  <section class="testimonial">
-    <h2>Why I Built MatchMyStay.bnb</h2>
-    <blockquote>
-      “After traveling solo to many countries, I realized hostels weren’t always the vibe. I just wanted a private, affordable, peaceful place to land — and that’s how MatchMyStay.bnb was born.”
-    </blockquote>
-    <footer>— Lynn, Founder</footer>
-  </section>
-
-  <section id="form" class="form-section">
-    <h2>Talk to Us</h2>
-    <p>Are you a solo traveler, hotel, or investor? Reach out below and let’s connect.</p>
-    <form action="https://formspree.io/f/mkgjywdz" method="POST">
+  <section id="investors" class="investors">
+    <h2>Investors</h2>
+    <p>We're building the future of solo travel. Let's talk partnerships and growth.</p>
+    <form action="https://formspree.io/f/{your-form-id}" method="POST">
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
+      <button type="submit">Connect</button>
     </form>
-<script>
-  function trackFormSubmit() {
-    gtag('event', 'form_submission', {
-      event_category: 'Contact',
-      event_label: 'Formspree Contact'
-    });
-  }
-</script>
-
   </section>
 
-  <section id="waitlist" class="centered-section">
-  <h2>Stay in the Loop</h2>
-  <p>Get early access, discounts, and launch updates.</p>
-  <form onsubmit="trackWaitlistJoin()">
-    <input type="email" placeholder="Your email address" required />
-    <button type="submit">Join Waitlist</button>
-  </form>
-</section>
+  <section id="testimonials" class="testimonials">
+    <h2>My Story</h2>
+    <p>After traveling solo across 17 countries, I realized the need for smarter, more affordable stays. MatchMyStay.bnb was born from that journey, to make solo travel better for everyone.</p>
+  </section>
+
+  <section id="join" class="join-waitlist">
+    <h2>Join Our Waitlist</h2>
+    <form action="https://formspree.io/f/{your-form-id}" method="POST">
+      <input type="email" name="email" placeholder="Your email address" required />
+      <button type="submit">Join Now</button>
+    </form>
+  </section>
 
   <footer>
-    <p>© 2025 MatchMyStay.bnb. All rights reserved.</p>
+    <p>&copy; 2025 MatchMyStay.bnb. All rights reserved.</p>
   </footer>
 
-<script>
-  function toggleMenu() {
-    const navLinks = document.getElementById("navLinks");
-    navLinks.classList.toggle("active");
-  }
-</script>
-  
-<script>
-  function toggleMenu() {
-    const navLinks = document.getElementById("navLinks");
-    navLinks.classList.toggle("active");
-  }
-
-  // Track button clicks across the site
-  document.addEventListener("DOMContentLoaded", function () {
-    const trackedButtons = [
-      { selector: 'a[href="#how-it-works"]', label: "How It Works" },
-      { selector: 'a[href="#waitlist"]', label: "Join Waitlist" },
-      { selector: 'a[href="#form"]', label: "Form Access" },
-      { selector: '#waitlist button[type="submit"]', label: "Waitlist Submit" },
-      { selector: '.form-section button[type="submit"]', label: "Contact Form Submit" }
-    ];
-
-    trackedButtons.forEach(item => {
-      const el = document.querySelector(item.selector);
-      if (el) {
-        el.addEventListener("click", () => {
-          gtag('event', 'click', {
-            event_category: 'Button',
-            event_label: item.label
-          });
+  <!-- Navigation Link Tracking Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const navLinks = document.querySelectorAll('.nav-links a');
+      navLinks.forEach(link => {
+        link.addEventListener('click', function () {
+          console.log('Navigating to:', this.getAttribute('href'));
         });
-      }
-    });
-  });
-<script>
-  const navLinks = document.querySelectorAll('.nav-links a');
-  navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      gtag('event', 'click', {
-        event_category: 'Navigation',
-        event_label: link.textContent.trim()
       });
     });
-  });
-</script>
-  
-<script>
-  const navLinks = document.querySelectorAll('.nav-links a');
-  navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      gtag('event', 'click', {
-        event_category: 'Navigation',
-        event_label: link.textContent.trim()
-      });
-    });
-  });
-</script>
+  </script>
 
-<script>
-  const contactForm = document.querySelector('form[action*="formspree"]');
-  if (contactForm) {
-    contactForm.addEventListener('submit', () => {
-      gtag('event', 'submit', {
-        event_category: 'Form',
-        event_label: 'Contact Form'
-      });
-    });
-  }
-</script>
-  
-<script>
-  const waitlistForm = document.querySelector('#waitlist form');
-  if (waitlistForm) {
-    waitlistForm.addEventListener('submit', () => {
-      gtag('event', 'submit', {
-        event_category: 'Form',
-        event_label: 'Waitlist Form'
-      });
-    });
-  }
-</script>
-  
-<script>
-  const ctaButtons = document.querySelectorAll('.cta-buttons a');
-  ctaButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      gtag('event', 'click', {
-        event_category: 'CTA',
-        event_label: button.textContent.trim()
-      });
-    });
-  });
-</script>
-
-<script>
-  function trackWaitlistJoin() {
-    gtag('event', 'join_waitlist', {
-      event_category: 'Conversion',
-      event_label: 'Waitlist Form'
-    });
-  }
-</script>
-
-  <!-- Optimized Google Analytics Tracking (Placed at bottom before </body>) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WFFK489ELG"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){ dataLayer.push(arguments); }
-  gtag('js', new Date());
-  gtag('config', 'G-WFFK489ELG', {
-    page_path: window.location.pathname,
-    send_page_view: true
-  });
-</script>
-
-<style>
-  .survey-popup {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #fff;
-    border: 2px solid #ccc;
-    padding: 16px;
-    z-index: 9999;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    border-radius: 12px;
-  }
-
-  .survey-popup-content p {
-    margin-bottom: 10px;
-  }
-
-  .survey-popup-content button {
-    margin-right: 10px;
-    padding: 6px 12px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: bold;
-  }
-
-  .survey-popup-content button:first-child {
-    background-color: #3f87f5;
-    color: white;
-  }
-
-  .survey-popup-content button:last-child {
-    background-color: #e0e0e0;
-    color: #333;
-  }
-</style>
-
-<script>
-  function closePopup() {
-    document.getElementById("popup-survey").style.display = "none";
-  }
-
-  window.addEventListener("load", function () {
-    setTimeout(function () {
-      document.getElementById("popup-survey").style.display = "block";
-    }, 5000); // 5 seconds delay
-  });
-</script>
- 
-<!-- Survey Popup HTML -->
-<div id="popup-survey" class="survey-popup" style="display:none; position:fixed; bottom:20px; right:20px; background:#fff; border:1px solid #ccc; padding:20px; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.2); z-index:1000;">
-  <div class="survey-popup-content">
-    <p style="margin-bottom:10px;">Hey solo traveler! Mind sharing quick feedback?</p>
-    <button onclick="window.open('https://forms.gle/pZmpH7611mDM3Mnz9', '_blank')" style="margin-right:10px;">Sure!</button>
-    <button onclick="closePopup()">Maybe later</button>
-  </div>
-</div>
-
-<script>
-  // Show popup after 5s only if not already shown today
-  document.addEventListener("DOMContentLoaded", function () {
-    const popup = document.getElementById("survey-popup");
-    const closeBtn = document.getElementById("popup-close");
-    const popupKey = "matchMyStaySurveyPopupLastShown";
-
-    function daysBetween(date1, date2) {
-      const diffTime = Math.abs(date2 - date1);
-      return Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-    }
-
-    const lastShown = localStorage.getItem(popupKey);
-    const now = new Date();
-
-    if (!lastShown || daysBetween(new Date(lastShown), now) > 0) {
-      setTimeout(function () {
-        popup.classList.add("visible");
-        localStorage.setItem(popupKey, now.toISOString());
-      }, 5000);
-    }
-
-    closeBtn.addEventListener("click", function () {
-      popup.classList.remove("visible");
-    });
-  });
-</script>
- 
 </body>
 </html>
