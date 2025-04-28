@@ -407,7 +407,7 @@ footer {
 }
 .hero .tagline {
   /* your gradient, inline-block, etc. */
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
   animation: fadeInHighlight 1s ease-out 0.5s both,
              pulse 2.5s ease-in-out 1.5s infinite alternate;
 }
