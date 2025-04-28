@@ -441,20 +441,6 @@ footer {
   animation: fadeInHighlight 1s ease-out 0.5s both,
              pulse 2.5s ease-in-out 1.5s infinite alternate;
 }
-
-/* keep your highlight bar code below */
-.hero .tagline::before {
-  content: "";
-  position: absolute;
-  top: 0; left: -100%;
-  width: 100%; height: 100%;
-  background: rgba(255, 159, 67, 0.3);
-  transition: left 0.5s ease-in-out;
-  z-index: -1;
-}
-.hero .tagline:hover::before {
-  left: 0;
-}
 .hero .tagline {
   display: inline-block;
   font-size: 1.8rem;
