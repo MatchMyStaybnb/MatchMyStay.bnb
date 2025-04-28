@@ -369,8 +369,8 @@ footer {
   animation: fadeInUp 1s ease-out; /* if you want it to animate in */
 }
 .tagline {
-  font-family: 'Great Vibes', cursive;
-  color: orange;
+  font-family: 'Great Vibes'
+  color: white;
   font-size: 32px;
   font-weight: normal;
   text-align: center;
