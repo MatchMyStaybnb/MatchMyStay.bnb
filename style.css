@@ -479,4 +479,28 @@ footer {
     text-shadow: 0 0 10px rgba(255, 112, 67, 0.4);
   }
 }
+.hero .tagline {
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 600;
+  background: linear-gradient(90deg, #FFA726, #FF7043);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 10px rgba(255, 112, 67, 0.4);
+  animation: fadeInHighlight 1s ease-out 0.5s both, pulseGlow 3s ease-in-out infinite alternate;
+  position: relative;
+  padding: 0.2em 0.5em;
+}
+
+@keyframes pulseGlow {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 112, 67, 0.4);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(255, 112, 67, 0.7);
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(255, 112, 67, 0.4);
+  }
+}
 
