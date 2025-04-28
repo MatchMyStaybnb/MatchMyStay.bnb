@@ -1,468 +1,227 @@
+/* Global Reset */
 * {
-  margin: 5px;
-  padding: 10px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  background-color: #0a0a0a;
+  color: #fff;
   line-height: 1.6;
-  color: #333;
-  background-color: #fff;
 }
 
+/* Navbar */
 .navbar {
-  background: #111;
-  padding: 1rem 2rem;
-  color: white;
-}
-
-.nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
 
-.nav-links li {
-  display: inline;
-  margin-left: 20px;
-}
-
-.nav-links a {
-  color: white;
+.navbar-brand {
+  font-size: 1.5rem;
+  color: #fff;
   text-decoration: none;
 }
 
-.logo {
-  font-weight: bold;
-  font-size: 1.5rem;
+.navbar-nav {
+  display: flex;
+  list-style: none;
 }
 
-  .hero {
-  background: url('background-compressed.jpg') no-repeat center center/cover;
+.navbar-nav li {
+  margin-left: 2rem;
 }
-.hero h1.animated-text {
+
+.navbar-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* Hamburger Menu (for Mobile) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 2px;
+  width: 25px;
+  background: #fff;
+  margin: 4px 0;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  .navbar-nav.active {
+    display: flex;
+  }
+  .hamburger {
+    display: flex;
+  }
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url('your-background.jpg') no-repeat center center/cover;
+}
+
+.hero h1 {
   font-size: 3rem;
-  animation: fadeInDown 1.5s ease-out;
+  color: #fff;
 }
 
-.hero .subheading {
-  font-size: 1.2rem;
-  margin-top: 10px;
-  animation: fadeInUp 1.5s ease-in;
+.hero .tagline {
+  font-size: 2rem;
+  color: #ff5e62;
+  margin: 1rem 0;
+  position: relative;
+  background: linear-gradient(90deg, #ff5e62, #ff9966);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: glow 2s ease-in-out infinite alternate;
 }
 
-@keyframes fadeInDown {
-  from { opacity: 0; transform: translateY(-20px); }
-  to { opacity: 1; transform: translateY(0); }
+.hero .tagline::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -5px;
+  background: #ff9966;
+  transition: width 0.4s ease, left 0.4s ease;
 }
 
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+.hero .tagline:hover::after {
+  width: 100%;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px #ff5e62; }
+  to { text-shadow: 0 0 20px #ff9966, 0 0 30px #ff9966; }
 }
 
 .cta-buttons {
-  margin-top: 20px;
+  margin-top: 2rem;
 }
 
-.btn {
-  padding: 10px 20px;
-  margin: 5px;
-  background-color: #f29c1f;
-  color: white;
+.cta-buttons a {
   text-decoration: none;
-  border-radius: 5px;
+  color: #fff;
+  background: linear-gradient(90deg, #ff5e62, #ff9966);
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  margin: 0 0.5rem;
+  transition: background 0.3s;
 }
 
-.btn.secondary {
-  background-color: #fff;
-  color: #f29c1f;
-  border: 1px solid #f29c1f;
+.cta-buttons a:hover {
+  background: linear-gradient(90deg, #ff9966, #ff5e62);
 }
 
-.centered-section,
-.light-section,
-.highlight-section {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.light-section {
-  background-color: #f4f4f4;
-}
-
-.highlight-section {
-  background-color: #fffaf0;
-}
-
+/* Testimonial Section */
 .testimonial {
-  background-color: #f9f9f9;
-  padding: 40px 20px;
+  background: #111;
+  padding: 4rem 2rem;
   text-align: center;
-  border-top: 2px solid #eee;
-  border-bottom: 2px solid #eee;
 }
 
-.testimonial blockquote {
-  font-style: italic;
-  max-width: 700px;
-  margin: 0 auto;
-  line-height: 1.6;
-  color: #555;
+.testimonial p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
 
-.testimonial footer {
-  margin-top: 15px;
-  font-weight: bold;
-  color: #444;
+.testimonial h3 {
+  font-size: 1.5rem;
+  color: #ff5e62;
 }
 
+/* Form Section */
 .form-section {
-  background-color: #fff;
-  padding: 40px 20px;
+  background: #1a1a1a;
+  padding: 4rem 2rem;
   text-align: center;
 }
 
-form input, form textarea {
-  width: 80%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+.form-section form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
-form button {
-  background-color: #f29c1f;
-  color: white;
-  padding: 10px 20px;
+.form-section input,
+.form-section textarea {
+  padding: 0.8rem;
+  margin: 0.5rem 0;
   border: none;
   border-radius: 5px;
-  cursor: pointer;
 }
 
-footer {
-  background: #111;
-  color: white;
+.form-section button {
+  padding: 0.8rem;
+  background: #ff5e62;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form-section button:hover {
+  background: #ff9966;
+}
+
+/* Footer */
+.footer {
+  background: #000;
+  color: #777;
   text-align: center;
-  padding: 20px;
+  padding: 1rem 0;
   font-size: 0.9rem;
 }
-/* ===== MOBILE-FRIENDLY STYLES (ADDED FOR RESPONSIVENESS) ===== */
-@media (max-width: 768px) {
-  body {
-    padding: 10px;
-    font-size: 16px;
-    line-height: 1.5;
-  }
 
-  .nav {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .nav a {
-    display: block;
-    margin: 0.5rem 0;
-    font-size: 16px;
-  }
-
-  .hero-section {
-    flex-direction: column;
-    padding: 2rem 1rem;
-    text-align: center;
-  }
-
-  .hero-text h1 {
-    font-size: 2rem;
-  }
-
-  .hero-text p {
-    font-size: 1rem;
-    padding: 0 10px;
-  }
-
-  .section,
-  .box,
-  .form-container,
-  .testimonial {
-    width: 100%;
-    padding: 1rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .why-it-works {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .footer {
-    font-size: 14px;
-    text-align: center;
-    padding: 1rem;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  input,
-  textarea,
-  button {
-    font-size: 16px;
-    width: 100%;
-  }
-}
-/* ===== RESPONSIVE LAYOUT FOR BODY, NAV, AND HERO ===== */
-@media (max-width: 768px) {
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Inter', sans-serif;
-    line-height: 1.5;
-    background-color: #fff;
-  }
-
-  .nav-container {
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-    text-align: center;
-  }
-
-  .nav-links {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    padding: 0;
-    margin: 1rem 0 0 0;
-    list-style: none;
-  }
-
-  .nav-links li a {
-    text-decoration: none;
-    font-size: 16px;
-    color: #333;
-  }
-
-  .hero {
-    text-align: center;
-    padding: 3rem 1rem;
-  }
-
-  .hero h1.animated-text {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-
-  .hero .subheading {
-    font-size: 1rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .cta-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .btn {
-    font-size: 16px;
-    padding: 0.75rem 1.25rem;
-    width: 100%;
-    max-width: 300px;
-    margin: 0 auto;
-  }
-}
-/* === Hamburger Menu Styles === */
-.hamburger {
-  display: none;
-  font-size: 2rem;
-  cursor: pointer;
-  padding: 10px;
-}
-
-/* Mobile Nav Toggle */
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background-color: #fff;
-    padding: 1rem;
-    width: 100%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-top: 1rem;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
-  .nav-links li {
-    margin: 0.5rem 0;
-  }
-}
-#survey-popup {
+/* Survey Pop-Up Box */
+.survey-popup {
   display: none;
   position: fixed;
   bottom: 20px;
   right: 20px;
-  max-width: 300px;
-  background: white;
-  border: 2px solid #000;
+  background: #333;
+  padding: 2rem;
   border-radius: 10px;
-  padding: 1rem;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-  z-index: 9999;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  z-index: 1001;
+  animation: fadeIn 0.5s;
 }
 
-#survey-popup.visible {
+.survey-popup.active {
   display: block;
-  opacity: 1;
 }
 
-#popup-close {
-  background: none;
-  border: none;
-  font-size: 18px;
-  float: right;
-  cursor: pointer;
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
-
-#closePopup {
-  background-color: #ff6347;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 10px;
-}
-
-#openSurveyPopup {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-#openSurveyPopup:hover {
-  background-color: #45a049;
-}
-.hero .tagline {
-  font-size: 1.2rem;        /* tweak as needed */
-  font-weight: 600;          /* make it pop */
-  color: #f29c1f;            /* your brand accent color */
-  margin: 0.5rem 0 1rem;     /* space above/below */
-  text-transform: uppercase; /* optional for extra punch */
-  letter-spacing: 0.05em;    /* subtle tracking */
-  animation: fadeInUp 1s ease-out; /* if you want it to animate in */
-}
-/* Enhanced Hero Tagline */
-.hero .tagline {
-  font-size: 1.3rem;
-  font-weight: 700;
-  background: linear-gradient(90deg, #f29c1f, #ff6f61);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin: 0.5rem 0 1.5rem;
-  position: relative;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  animation: fadeInHighlight 1s ease-out 0.5s both;
-}
-
-/* Decorative underline */
-.hero .tagline::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: -6px;
-  width: 0;
-  height: 3px;
-  background: #ff6f61;
-  border-radius: 2px;
-  transition: width 0.5s ease-out, left 0.5s ease-out;
-}
-.hero .tagline:hover::after {
-  width: 60%;
-  left: 20%;
-}
-
-/* Fade-in highlight animation */
-@keyframes fadeInHighlight {
-  0%   { opacity: 0; transform: translateY(10px); }
-  80%  { opacity: 1; transform: translateY(0); }
-  100% { background-position: 200% 0; }
-}
-.hero .tagline {
-  /* your gradient, inline-block, etc. */
-  text-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
-  animation: fadeInHighlight 1s ease-out 0.5s both,
-             pulse 2.5s ease-in-out 1.5s infinite alternate;
-}
-
-.hero .tagline::before {
-  content: "";
-  position: absolute;
-  top: 0; left: -100%;
-  width: 100%; height: 100%;
-  background: rgba(255, 159, 67, 0.3);
-  transition: left 0.5s ease-in-out;
-  z-index: -1;
-}
-
-.hero .tagline:hover::before {
-  left: 0;
-}
-.hero .tagline {
-  display: inline-block;       /* ensure it’s its own layer */
-  position: relative;          /* for the ::before highlight */
-  /* remove any text-shadow here */
-  
-  /* subtle drop-shadow behind the clipped text */
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15));
-  
-  /* keep your gradient & animation */
-  background: linear-gradient(90deg, #f29c1f, #ff6f61, #f29c1f);
-  background-size: 200% auto;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: fadeInHighlight 1s ease-out 0.5s both,
-             pulse 2.5s ease-in-out 1.5s infinite alternate;
-}
-.hero .tagline {
-  display: inline-block;
-  font-size: 1.8rem;
-  font-weight: 600;
-  background: linear-gradient(90deg, #FFA726, #FF7043);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 10px rgba(255, 112, 67, 0.4);
-  animation: fadeInHighlight 1s ease-out 0.5s both, pulseGlow 3s ease-in-out infinite alternate;
-  position: relative;
-  padding: 0.2em 0.5em;
-}
-
-@keyframes pulseGlow {
-  0% {
-    text-shadow: 0 0 10px rgba(255, 112, 67, 0.4);
-  }
-  50% {
-    text-shadow: 0 0 20px rgba(255, 112, 67, 0.7);
-  }
-  100% {
-    text-shadow: 0 0 10px rgba(255, 112, 67, 0.4);
-  }
-}
-
