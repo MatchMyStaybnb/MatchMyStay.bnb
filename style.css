@@ -102,31 +102,82 @@ body {
   color: #666;
 }
 
-/* Partners & Investors Sections */
-.partners, .investors {
+/* Partners Section */
+.partners {
   padding: 4rem 2rem;
   background: #fff;
   text-align: center;
 }
 
-.partners h2, .investors h2 {
+.partners h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
-.partners p, .investors p {
+.partners p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
 
+/* Investor Section */
+.investors {
+  padding: 4rem 2rem;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.investors h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.investors p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 4rem 2rem;
+  background: #fff;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.testimonials p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #666;
+}
+
+/* Join Waitlist Section */
+.join-waitlist {
+  padding: 4rem 2rem;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.join-waitlist h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Form General Styles */
 form {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  margin-top: 2rem;
 }
 
-form input {
+form input[type="text"],
+form input[type="email"] {
   padding: 0.75rem;
   width: 300px;
   border: 1px solid #ccc;
@@ -148,35 +199,17 @@ form button:hover {
   background-color: #005fa3;
 }
 
-/* Testimonials Section */
-.testimonials {
-  padding: 4rem 2rem;
-  background: #f9f9f9;
-  text-align: center;
-}
-
-.testimonials h2 {
-  font-size: 2.5rem;
+/* Specific Form Styles */
+#partner-form input,
+#investor-form input,
+#waitlist-form input {
   margin-bottom: 1rem;
 }
 
-.testimonials p {
-  font-size: 1.2rem;
-  max-width: 700px;
-  margin: 0 auto;
-  color: #666;
-}
-
-/* Join Waitlist Section */
-.join-waitlist {
-  padding: 4rem 2rem;
-  background: #fff;
-  text-align: center;
-}
-
-.join-waitlist h2 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
+#partner-form button,
+#investor-form button,
+#waitlist-form button {
+  margin-top: 1rem;
 }
 
 /* Footer */
@@ -196,6 +229,6 @@ footer {
   }
 
   .nav-links {
-    display: none; /* Could add a mobile menu later */
+    display: none; /* Can add a mobile nav menu later */
   }
 }
