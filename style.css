@@ -7,17 +7,17 @@
 .logo-block {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  font-family: 'Outfit', sans-serif;
-  font-weight: 700;
-  font-size: 1.6rem;
-  color: #000; /* Adjust to match your branding */
+  gap: 8px;
+  font-size: 1.25rem; /* adjust text size */
+  font-weight: bold;
   text-decoration: none;
+  color: #000; /* or your brand color */
 }
 
 .logo-block img {
-  height: 1.6rem; /* Matches text height */
+  height: 24px; /* keeps the logo small */
   width: auto;
+  display: inline-block;
 }
 
 body {
