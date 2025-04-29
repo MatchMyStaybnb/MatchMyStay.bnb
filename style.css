@@ -4,19 +4,20 @@
   padding: 0;
   box-sizing: border-box;
 }
-.logo {
+.logo-block {
   display: flex;
   align-items: center;
-  font-size: 1.5rem;
-  font-weight: 700;
+  gap: 0.5rem;
   font-family: 'Outfit', sans-serif;
-  color: #000;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #000; /* Adjust to match your branding */
+  text-decoration: none;
 }
 
-.logo-icon {
-  width: 28px;
-  height: 28px;
-  margin-right: 8px;
+.logo-block img {
+  height: 1.6rem; /* Matches text height */
+  width: auto;
 }
 
 body {
