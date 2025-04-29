@@ -4,6 +4,20 @@
   padding: 0;
   box-sizing: border-box;
 }
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: 'Outfit', sans-serif;
+  color: #000;
+}
+
+.logo-icon {
+  width: 28px;
+  height: 28px;
+  margin-right: 8px;
+}
 
 body {
   font-family: 'Outfit', sans-serif;
