@@ -264,3 +264,12 @@ footer {
   font-size: 0.95rem;
   line-height: 1.6;
 }
+
+.social-links-text a {
+  color: white;
+  text-decoration: none;
+}
+
+.social-links-text a:hover {
+  text-decoration: underline;
+}
