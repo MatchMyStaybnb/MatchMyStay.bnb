@@ -259,14 +259,8 @@ footer {
 }
 .social-links-text {
   text-align: center;
+  color: white;
   margin-top: 20px;
-}
-
-.social-links-text ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.social-links-text li {
-  margin: 5px 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
