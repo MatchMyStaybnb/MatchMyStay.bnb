@@ -336,3 +336,25 @@ footer {
     transform: translateY(0) scale(1);
   }
 }
+.animated-tagline {
+  font-family: 'Lobster', cursive;
+  font-size: 1.8rem;
+  animation: bounceBack 2s ease-in-out infinite;
+  display: inline-block;
+  color: #333;
+}
+
+@keyframes bounceBack {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
+}
