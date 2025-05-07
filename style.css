@@ -373,3 +373,44 @@ footer {
   font-size: 0.85rem;
   color: #999;
 }
+/* FAQ Section Styling */
+.faq {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+  font-family: sans-serif;
+}
+
+.faq h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #1b1b1b;
+  margin-bottom: 2rem;
+}
+
+.faq details {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+.faq summary {
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.faq details[open] {
+  background: #fff;
+  border-color: #ccc;
+}
+
+.faq p {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #444;
+}
