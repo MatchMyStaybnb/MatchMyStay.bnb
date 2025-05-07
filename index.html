@@ -172,7 +172,40 @@
       <input type="email" name="email" placeholder="Your Email" required />
       <button type="submit">Connect</button>
     </form>
+ <section id="investors" class="investors">
+  <h2>Investors</h2>
+  <p>We're building the future of solo travel. Let's talk partnerships and growth.</p>
+  <form action="https://formspree.io/f/mkgjywdz" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <button type="submit">Connect</button>
+  </form>
+
+  <!-- CTA Button to reveal detailed message -->
+  <div class="cta-toggle-container" style="text-align: center; margin-top: 1.5rem;">
+    <button onclick="toggleInvestorCTA()" type="button" style="padding: 10px 20px; background-color: #1b1b1b; color: white; border: none; border-radius: 6px; font-size: 1rem; cursor: pointer;">
+      Learn More About Our Vision
+    </button>
   </div>
+
+  <!-- Hidden CTA Message -->
+  <div id="investorCTA" style="display: none; max-width: 700px; margin: 1.5rem auto 0; padding: 1.5rem; background: #f9f9f9; border-radius: 12px; box-shadow: 0 0 20px rgba(0,0,0,0.1); text-align: center; font-family: sans-serif;">
+    <h2 style="color: #1b1b1b; font-size: 1.5rem; margin-bottom: 1rem;">Let's Build the Future of Solo Travel</h2>
+    <p style="font-size: 1rem; color: #444;">We're actively looking for strategic partners and early investors who believe in the solo travel revolution. If you're excited about our mission to transform underutilized hotel rooms into personalized, affordable escapes — let's talk.</p>
+    <p style="margin-top: 1rem; font-weight: bold;">📩 Reach out to: <br><a href="mailto:Ronalyn_esteban2000@yahoo.com" style="color: #007BFF;">Ronalyn_esteban2000@yahoo.com</a><br>
+    Or message us on Instagram: <a href="https://instagram.com/matchmystay.bnb" target="_blank" style="color: #007BFF;">@matchmystay.bnb</a></p>
+  </div>
+</section>
+
+<!-- Toggle Script -->
+<script>
+  function toggleInvestorCTA() {
+    const cta = document.getElementById('investorCTA');
+    cta.style.display = cta.style.display === 'none' ? 'block' : 'none';
+  }
+</script>
+
+ </div>
 </section>
 
   </section>
