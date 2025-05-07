@@ -340,3 +340,36 @@ footer {
     background: url('background-compressed.jpg') no-repeat center center/cover;
   }
 }
+.section-box {
+  background-color: #fdfdfd;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-top: 2rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.timeline {
+  margin-top: 1.5rem;
+  text-align: left;
+}
+
+.milestone {
+  margin-bottom: 1.5rem;
+}
+
+.milestone h3 {
+  margin-bottom: 0.25rem;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.milestone p {
+  margin-bottom: 0.25rem;
+  color: #666;
+}
+
+.milestone .date {
+  font-size: 0.85rem;
+  color: #999;
+}
