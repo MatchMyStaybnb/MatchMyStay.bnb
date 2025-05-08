@@ -441,3 +441,47 @@ footer {
   font-size: 1rem;
   line-height: 1.6;
 }
+body {
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p, a, input, button {
+    font-size: 1rem;
+  }
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo-block img {
+  height: 40px;
+  margin-right: 0.5rem;
+}
+
+.logo-block span {
+  font-family: 'Lobster', cursive;
+  font-size: 1.5rem;
+  color: #333;
+}
