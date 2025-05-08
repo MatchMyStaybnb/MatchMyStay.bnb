@@ -516,3 +516,6 @@ html {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional for subtle styling */
   margin-bottom: 2rem; /* To make sure it doesn't stretch into the footer */
 }
+html {
+  scroll-behavior: smooth;
+}
