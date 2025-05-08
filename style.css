@@ -414,3 +414,30 @@ footer {
   line-height: 1.4;
   color: #444;
 }
+.solo-hotel-box {
+  background-color: #ffffff;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 700px;
+  margin: 2rem auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.solo-hotel-box h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.solo-hotel-box ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  color: #444;
+}
+
+.solo-hotel-box ul li {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
