@@ -127,23 +127,28 @@
   </div>
   </section>
 
-  <section id="partners" class="partners">
-    <h2>Hotels & Partners</h2>
-    <p>Interested in partnering with us? Join early and reach solo travelers worldwide.</p>
-    <form action="https://formspree.io/f/mkgjywdz" method="POST">
-      <input type="text" name="hotel" placeholder="Hotel/Partner Name" required />
-      <input type="email" name="email" placeholder="Contact Email" required />
-      <button type="submit">Register Interest</button>
-    </form>
-  </section>
- <section id="investors" class="investors">
-  <h2>Investors</h2>
-  <p>We're building the future of solo travel. Let's talk partnerships and growth.</p>
+  <div class="form-section">
+  <h3>Join as a Hotel Partner</h3>
   <form action="https://formspree.io/f/mkgjywdz" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required />
-    <input type="email" name="email" placeholder="Your Email" required />
-    <button type="submit">Connect</button>
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="hidden" name="audience" value="Hotel Partner">
+    <textarea name="message" placeholder="Your message or question (optional)"></textarea>
+    <button type="submit">Register Interest</button>
   </form>
+  </div>
+  </section>
+ <div class="form-section">
+  <h3>Investor Waitlist</h3>
+  <form action="https://formspree.io/f/mkgjywdz" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="hidden" name="audience" value="Investor">
+    <textarea name="message" placeholder="Tell us your interest level or ask a question"></textarea>
+    <button type="submit">Join Investor List</button>
+  </form>
+</div>
+
   </section>
 
   <section id="testimonials" class="testimonials">
@@ -151,12 +156,18 @@
     <p>After traveling solo across the world, I realized the need for smarter, more affordable stays. MatchMyStay.bnb was born from that journey, to make solo travel better for everyone.</p>
   </section>
 
-  <section id="join" class="join-waitlist">
-    <h2>Join Our Waitlist</h2>
-    <form action="https://formspree.io/f/mkgjywdz" method="POST">
-      <input type="email" name="email" placeholder="Your email address" required />
-      <button type="submit">Join Now</button>
-    </form>
+ <div class="form-section">
+  <h3>Join as a Solo Traveler</h3>
+  <form action="https://formspree.io/f/mkgjywdz" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="hidden" name="audience" value="Solo Traveler">
+    <textarea name="message" placeholder="Your message or question (optional)"></textarea>
+    <button type="submit">Register Interest</button>
+  </form>
+</div>
+</section>
+
  <section class="faq" style="max-width: 700px; margin: 2rem auto; font-family: sans-serif; font-size: 0.85rem; line-height: 1.4;">
   <h2 style="text-align: center; font-size: 1.25rem; margin-bottom: 1.5rem;">Frequently Asked Questions</h2>
   <section id="faq" class="faq">
