@@ -448,10 +448,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  .hamburger {
-    display: none !important;
-  }
-
+}
   .nav-links {
     display: flex !important;
     position: static !important;
