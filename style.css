@@ -522,17 +522,3 @@ html {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional for subtle styling */
   margin-bottom: 2rem; /* To make sure it doesn't stretch into the footer */
 }
-.cta-button {
-  display: inline-block;
-  background-color: #3f87f5;
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: background 0.3s ease;
-}
-
-.cta-button:hover {
-  background-color: #2f6fe0;
-}
