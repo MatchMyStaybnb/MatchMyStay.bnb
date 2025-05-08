@@ -519,3 +519,8 @@ html {
 html {
   scroll-behavior: smooth;
 }
+#join-waitlist,
+#hotel-partner,
+#investor-waitlist {
+  scroll-margin-top: 80px; /* height of your fixed navbar */
+}
