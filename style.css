@@ -46,12 +46,6 @@ html {
   z-index: 1000;
 }
 
-.logo {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #333;
-}
-
 .nav-links a {
   margin-left: 1.5rem;
   text-decoration: none;
@@ -131,18 +125,19 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
+  gap: 20px;
+  padding: 1rem;
 }
 
 .benefit-box {
+  flex: 1 1 250px;
+  max-width: 300px;
+  min-width: 200px;
   background: #fff;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  width: 300px;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   text-align: center;
-  margin: 40px auto;
-  max-width: 700px;
 }
 
 .benefit-box h3 {
@@ -188,6 +183,7 @@ form {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  margin-top: 2rem;
 }
 
 form input {
@@ -244,7 +240,7 @@ form button:hover {
 }
 
 /* CTA Section */
-.cta-section, .cta-block {
+.cta-section {
   background: #0e0e0e;
   color: #fff;
   text-align: center;
@@ -255,12 +251,12 @@ form button:hover {
   box-shadow: 0 5px 20px rgba(0,0,0,0.2);
 }
 
-.cta-section h2, .cta-block h2 {
+.cta-section h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 
-.cta-section p, .cta-block p {
+.cta-section p {
   font-size: 1.1rem;
   margin-bottom: 2rem;
   max-width: 600px;
@@ -310,36 +306,7 @@ footer {
   text-decoration: underline;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .benefits-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background: white;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    padding: 1rem;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
-  .hamburger {
-    display: block;
-  }
-
-  .hero {
-    background: url('background-compressed.jpg') no-repeat center center/cover;
-  }
-}
+/* Section Box */
 .section-box {
   background-color: #fdfdfd;
   border: 1px solid #ddd;
@@ -373,6 +340,7 @@ footer {
   font-size: 0.85rem;
   color: #999;
 }
+
 /* FAQ Section Styling */
 .faq {
   max-width: 800px;
@@ -414,6 +382,7 @@ footer {
   line-height: 1.4;
   color: #444;
 }
+
 .solo-hotel-box {
   background-color: #ffffff;
   border: 2px solid #e0e0e0;
@@ -441,80 +410,35 @@ footer {
   font-size: 1rem;
   line-height: 1.6;
 }
-body {
-  font-family: 'Outfit', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-}
 
+/* Responsive Design */
 @media (max-width: 768px) {
-  .nav-links {
-    display: flex !important;
-    position: static !important;
-    flex-direction: row !important;
-    box-shadow: none !important;
-    background: transparent !important;
-    padding: 0 !important;
+  .benefits-container {
+    flex-direction: column;
+    align-items: center;
   }
-}
-/* Base styles for navigation on mobile */
-@media (max-width: 768px) {
+
   .nav-links {
     display: none;
     flex-direction: column;
     background: white;
     position: absolute;
-    top: 60px;  /* Adjust top to position menu */
+    top: 60px;
     right: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     padding: 1rem;
-    z-index: 999;  /* Ensures it’s on top */
+    z-index: 999;
   }
 
   .nav-links.active {
-    display: flex;  /* When active, show the menu */
+    display: flex;
   }
 
-  /* Show the hamburger button on mobile */
   .hamburger {
     display: block;
-    font-size: 2rem;
-    cursor: pointer;
-    color: #ff6600;
   }
-}
-.benefits-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 1.5rem;
-}
 
-.benefit-box {
-  flex: 1 1 300px;
-  max-width: 320px;
-  padding: 1rem;
-  background-color: #f9f9f9;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  text-align: left;
-}
-.benefits-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 1rem;
-}
-
-.benefit-box {
-  flex: 1 1 250px;
-  max-width: 300px;
-  min-width: 200px;
-  background: #fff;
-  border-radius: 10px;
-  padding: 1rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  text-align: center;
+  .hero {
+    background: url('background-compressed.jpg') no-repeat center center/cover;
+  }
 }
