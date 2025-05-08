@@ -446,3 +446,49 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px; /* Adjust based on your sticky nav height */
 }
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.95);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #ff6600;
+}
+
+/* Navigation links default */
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* Responsive nav */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    z-index: 999;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
