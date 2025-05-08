@@ -448,7 +448,6 @@ body {
 }
 
 @media (max-width: 768px) {
-}
   .nav-links {
     display: flex !important;
     position: static !important;
