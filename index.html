@@ -76,7 +76,7 @@
   </p>
   <div class="form-section">
     <h3>Join as a Solo Traveler</h3>
-    <form action="https://formspree.io/f/mkgjywdz" method="POST">
+    <form action="https://formspree.io/f/mkgjywdz?utm_source=website&utm_medium=form&utm_campaign=solo_waitlist" method="POST">
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="email" name="email" placeholder="Your Email" required>
       <input type="hidden" name="audience" value="Solo Traveler">
@@ -110,7 +110,7 @@
     Tap into the solo traveler market with zero hassle. MatchMyStay.bnb brings guests to your door — no new systems needed.
   </p>  <div class="form-section">
   <h3>Join as a Hotel Partner</h3>
-  <form action="https://formspree.io/f/mkgjywdz" method="POST">
+  <form action="https://formspree.io/f/mkgjywdz?utm_source=website&utm_medium=form&utm_campaign=hotel_signup" method="POST">
     <input type="text" name="name" placeholder="Your Name" required>
     <input type="email" name="email" placeholder="Your Email" required>
     <input type="hidden" name="audience" value="Hotel Partner">
@@ -127,7 +127,7 @@
   </p>
   <div class="form-section">
     <h3>Investor Waitlist</h3>
-    <form action="https://formspree.io/f/mkgjywdz" method="POST">
+    <form action="https://formspree.io/f/mkgjywdz?utm_source=website&utm_medium=form&utm_campaign=investor_interest" method="POST">
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="email" name="email" placeholder="Your Email" required>
       <input type="hidden" name="audience" value="Investor">
@@ -329,6 +329,22 @@
     const nav = document.querySelector('.nav-links');
     nav.classList.toggle('active');
   }
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const trackable = document.querySelectorAll('a, button, form');
+    trackable.forEach(el => {
+      el.addEventListener('click', function () {
+        const label = this.innerText || this.value || this.getAttribute('href') || 'Unknown';
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'click', {
+            event_category: 'engagement',
+            event_label: label
+          });
+        }
+      });
+    });
+  });
 </script>
 
 </body>
