@@ -527,3 +527,39 @@ html {
   max-width: 900px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
+footer.section-block {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  margin-top: 3rem;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.footer-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.social-links-text {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.social-links-text p {
+  margin-bottom: 0.5rem;
+}
+
+.social-links-text a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 0.75rem;
+  font-weight: 600;
+}
+
+.social-links-text a:hover {
+  text-decoration: underline;
+}
