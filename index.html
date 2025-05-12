@@ -80,6 +80,16 @@
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="email" name="email" placeholder="Your Email" required>
       <input type="hidden" name="audience" value="Solo Traveler">
+
+      <!-- Smart Matching Concept Field -->
+      <select name="traveler_type" required>
+        <option value="">I'm mostly a...</option>
+        <option value="budget">Budget Traveler</option>
+        <option value="young">Younger Explorer</option>
+        <option value="nomad">Digital Nomad</option>
+        <option value="luxury">Luxury Traveler</option>
+      </select>
+
       <textarea name="message" placeholder="Your message or question (optional)"></textarea>
       <button type="submit">Register Interest</button>
     </form>
@@ -108,15 +118,26 @@
   <h2 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Partner With Us</h2>
   <p style="max-width: 600px; margin: 0 auto 1rem; font-size: 1rem;">
     Tap into the solo traveler market with zero hassle. MatchMyStay.bnb brings guests to your door — no new systems needed.
-  </p>  <div class="form-section">
-  <h3>Join as a Hotel Partner</h3>
-  <form action="https://formspree.io/f/mkgjywdz?utm_source=website&utm_medium=form&utm_campaign=hotel_signup" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <input type="hidden" name="audience" value="Hotel Partner">
-    <textarea name="message" placeholder="Your message or question (optional)"></textarea>
-    <button type="submit">Register Interest</button>
-  </form>
+  </p>
+  <div class="form-section">
+    <h3>Join as a Hotel Partner</h3>
+    <form action="https://formspree.io/f/mkgjywdz?utm_source=website&utm_medium=form&utm_campaign=hotel_signup" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="hidden" name="audience" value="Hotel Partner">
+
+      <!-- Hotel Matching Interest -->
+      <select name="preferred_traveler" required>
+        <option value="">We’re best suited for...</option>
+        <option value="budget">Budget Travelers (budget rooms, shared stays)</option>
+        <option value="young">Younger Travelers (nightlife, social areas)</option>
+        <option value="nomad">Digital Nomads (WiFi, workspace)</option>
+        <option value="luxury">Luxury Travelers (premium rooms, privacy)</option>
+      </select>
+
+      <textarea name="message" placeholder="Your message or question (optional)"></textarea>
+      <button type="submit">Register Interest</button>
+    </form>
   </div>
 </section>
   
@@ -131,11 +152,22 @@
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="email" name="email" placeholder="Your Email" required>
       <input type="hidden" name="audience" value="Investor">
+
+      <!-- Investor Interest Type -->
+      <select name="investment_stage" required>
+        <option value="">Investment Interest</option>
+        <option value="advice">Advisory</option>
+        <option value="angel">Angel Investor</option>
+        <option value="scout">Scout/Fund Rep</option>
+        <option value="not_sure">Not Sure Yet</option>
+      </select>
+
       <textarea name="message" placeholder="Tell us your interest level or ask a question"></textarea>
       <button type="submit">Join Investor List</button>
     </form>
   </div>
 </section>
+
   </section>
   <section id="testimonials" class="testimonials section-block">
     <h2>My Story</h2>
