@@ -597,3 +597,24 @@ footer.footer-dark {
   color: #3f87f5;
   text-decoration: underline;
 }
+.smart-travel-cta,
+.section-block {
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .smart-travel-cta,
+  .section-block {
+    padding: 2rem 1rem;
+    margin: 2rem 1rem;
+    width: 100%;
+  }
+
+  .form-section input,
+  .form-section textarea {
+    width: 100% !important;
+  }
+}
