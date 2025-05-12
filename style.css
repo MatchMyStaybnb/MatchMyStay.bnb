@@ -618,3 +618,11 @@ footer.footer-dark {
     width: 100% !important;
   }
 }
+form select {
+  padding: 0.75rem;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
