@@ -727,5 +727,8 @@ width: 100% !important;
 .form-section button:hover {
   background-color: #005fa3;
 }
+body {
+  font-family: 'Outfit', sans-serif;
+}
 
 
