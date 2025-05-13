@@ -655,5 +655,30 @@ width: 100%;
 width: 100% !important;
 }
 }
+@media (max-width: 768px) {
+  .benefits-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-section,
+  .benefit-box,
+  .section-block,
+  .roadmap,
+  footer {
+    width: 100%;
+    max-width: 95%;
+    margin: 1rem auto;
+    padding: 1rem;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  footer .footer-container {
+    width: 100%;
+    max-width: 95%;
+    margin: 0 auto;
+  }
+}
 
 
