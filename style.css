@@ -680,5 +680,52 @@ width: 100% !important;
     margin: 0 auto;
   }
 }
+/* Fix section layout for mobile & containment */
+.smart-travel-cta.section-block {
+  padding: 2rem 1rem;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 12px;
+  max-width: 900px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.smart-travel-cta.section-block .form-section {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Make sure inputs are full width */
+.form-section input,
+.form-section select,
+.form-section textarea {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Submit button */
+.form-section button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-section button:hover {
+  background-color: #005fa3;
+}
 
 
